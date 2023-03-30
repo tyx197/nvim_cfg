@@ -21,6 +21,9 @@ require("configs.telescope").cfg()
 require("configs.alpha-nvim").cfg()
 require("configs.toggleterm").cfg()
 require("configs.mason").cfg()
+require("configs.cmp").cfg()
+
+-- Lsp
 require("configs.lspconfig")
 
 -- Keymaps

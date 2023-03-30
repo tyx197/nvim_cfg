@@ -40,15 +40,35 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons' },
   }
 
-  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-
   -- Toggleterm
   use {"akinsho/toggleterm.nvim", tag = '*'}
 
   -- Mason
   use {
     "williamboman/mason.nvim",
+    'williamboman/mason-lspconfig.nvim',
     run = ":MasonUpdate" -- :MasonUpdate updates registry contents
   }
+
+  -- LSP
+  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+
+  -- Cmp
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+
+  -- Luasnip
+  use {
+      'L3MON4D3/LuaSnip',
+  }
+
+  -- Mardown preview
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
 end)

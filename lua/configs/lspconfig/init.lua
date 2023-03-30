@@ -37,6 +37,9 @@ lspconfig.lua_ls.setup {
   },
 }
 
+-- Latex
+lspconfig.texlab.setup {}
+lspconfig.ltex.setup {}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
