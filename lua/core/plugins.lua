@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
 
   use 'nvim-lua/plenary.nvim'
   use 'kyazdani42/nvim-web-devicons'
+  use 'duane9/nvim-rg'
 
   -- Bufferline
   use {
@@ -30,8 +31,8 @@ return require('packer').startup(function(use)
 
   -- Telescope
   use {
-       'nvim-telescope/telescope.nvim',
-       requires = 'nvim-lua/plenary.nvim'
+       'nvim-telescope/telescope.nvim', tag = '0.1.1',
+       requires = {{'nvim-lua/plenary.nvim'}}
   }
 
   -- Startupscreen
@@ -68,7 +69,7 @@ return require('packer').startup(function(use)
   -- Mardown preview
   use({
       "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
+       run = function() vim.fn["mkdp#util#install"]() end,
   })
 
 end)

@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\63509\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-rg"] = {
+    loaded = true,
+    path = "C:\\Users\\63509\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-rg",
+    url = "https://github.com/duane9/nvim-rg"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\63509\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
