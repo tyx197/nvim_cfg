@@ -29,3 +29,6 @@ require("configs.lspconfig")
 -- Keymaps
 require("core.keymaps")
 
+-- Autocmd
+require("core.au")
+
